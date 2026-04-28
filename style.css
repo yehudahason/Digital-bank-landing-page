@@ -143,7 +143,7 @@ nav {
 }
 .section1 {
   width: 100%;
-  height: 31.5rem;
+  height: fit-content;
   padding-left: 10rem;
 }
 .container1 {
@@ -153,6 +153,7 @@ nav {
   min-height: 48rem;
 }
 .text-con1 {
+  margin-right: -4rem;
   padding-top: 10rem;
   max-width: 28rem;
   display: flex;
@@ -164,26 +165,28 @@ nav {
 }
 .img-con {
   position: relative;
-  width: 45rem;
-  height: 48rem;
+  width: 50rem;
+  height: 50rem;
 }
 
 .img-con img {
   position: absolute;
   top: 0;
-  left: 0;
-  height: 48rem;
+  height: 100%;
 }
 img.top {
   z-index: 4;
   left: 22%;
   top: -16%;
-  height: 95%;
+  height: 57rem;
+  width: auto;
 }
 img.bottom {
   z-index: 2;
-  left: -10%;
+  left: 5%;
   top: -25%;
+  width: 60rem;
+  height: 58rem;
 }
 
 .section2 {
@@ -237,7 +240,7 @@ footer {
 }
 @media screen and (max-width: 1300px) {
   .img-con {
-    width: 40.5rem;
+    width: 44rem;
   }
 }
 @media screen and (max-width: 1212px) {
@@ -271,18 +274,19 @@ footer {
     content: url("./img/bg-intro-tablet.png");
   }
   img.top {
-    top: -45%;
+    top: -42%;
     left: 50%;
     transform: translateX(-50%);
-    height: 48rem;
+    height: 54rem;
   }
 
   .img-con {
     width: 100%;
-    height: 32rem;
+    height: 37rem;
   }
   .text-con1 {
     padding-top: 0;
+    margin: 0;
   }
   h1 {
     text-align: center;
@@ -306,7 +310,7 @@ footer {
     content: url("./img/bg-intro-mobile.svg");
   }
   img.top {
-    top: -35%;
+    top: -45%;
     height: 40rem;
   }
   .img-con {
@@ -323,26 +327,31 @@ footer {
 @media screen and (max-width: 500px) {
   .img-con {
     width: 100%;
+    height: 22rem;
   }
   img.top {
-    top: -25%;
-    width: 100%;
-    height: fit-content;
+    top: -30%;
+    width: 90%;
+    height: 26rem;
   }
   img.bottom {
-    height: fit-content;
+    height: 100%;
   }
   .text-con1 h1 {
     font: var(--tp-2);
     letter-spacing: var(--tp-2-ls);
   }
   .text-con1 {
-    margin: 2rem;
+    /* margin: 8rem; */
   }
 }
 
 @media (max-width: 410px) {
   .text-con1 {
-    margin-top: -5rem;
+    /* margin-top: -6rem; */
+  }
+  img.top {
+    width: 97%;
+    /* object-fit: cover; */
   }
 }
