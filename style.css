@@ -86,6 +86,17 @@ main {
 a {
   text-decoration: none;
 }
+.request-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+  font: var(--tp-7b);
+  letter-spacing: var(--tp-7b-ls);
+  background-color: var(--clr-green-400);
+  color: var(--clr-white);
+}
 h1 {
   font: var(--tp-1);
   letter-spacing: var(--tp-1-ls);
@@ -115,7 +126,6 @@ nav {
   align-items: center;
   font: var(--tp-7r);
   letter-spacing: var(--tp-7r-ls);
-  background-color: aqua;
 }
 .ul-container {
   /* padding: 2rem 0; */
@@ -144,7 +154,7 @@ nav {
 }
 .text-con1 {
   padding-top: 10rem;
-  max-width: 30rem;
+  max-width: 28rem;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -154,7 +164,7 @@ nav {
 }
 .img-con {
   position: relative;
-  width: 100%;
+  width: 45rem;
   height: 48rem;
 }
 
@@ -225,13 +235,20 @@ footer {
   margin: 0 0.5rem;
   opacity: 0.6;
 }
-
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
+  .img-con {
+    width: 40.5rem;
+  }
+}
+@media screen and (max-width: 1212px) {
+  nav .request-btn {
+    display: none;
+  }
   .container1 {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-end;
   }
   header {
     padding-left: 8%;
@@ -265,7 +282,13 @@ footer {
     height: 32rem;
   }
   .text-con1 {
-    margin-top: -5rem;
+    padding-top: 0;
+  }
+  h1 {
+    text-align: center;
+  }
+  p {
+    text-align: center;
   }
 }
 @media screen and (max-width: 768px) {
@@ -279,7 +302,7 @@ footer {
     padding-left: 0;
   }
   img.bottom {
-    top: -22%;
+    top: 0;
     content: url("./img/bg-intro-mobile.svg");
   }
   img.top {
@@ -287,7 +310,7 @@ footer {
     height: 40rem;
   }
   .img-con {
-    height: 40rem;
+    height: 30rem;
   }
   .text-con1 {
     width: 90%;
@@ -295,18 +318,11 @@ footer {
   .text-con1 {
     padding-top: 0;
   }
-  h1 {
-    text-align: center;
-  }
-  p {
-    text-align: center;
-  }
 }
 
 @media screen and (max-width: 500px) {
   .img-con {
     width: 100%;
-    overflow: hidden;
   }
   img.top {
     top: -25%;
@@ -314,11 +330,19 @@ footer {
     height: fit-content;
   }
   img.bottom {
-    top: -10%;
     height: fit-content;
   }
   .text-con1 h1 {
     font: var(--tp-2);
     letter-spacing: var(--tp-2-ls);
+  }
+  .text-con1 {
+    margin: 2rem;
+  }
+}
+
+@media (max-width: 410px) {
+  .text-con1 {
+    margin-top: -5rem;
   }
 }
