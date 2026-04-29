@@ -344,7 +344,7 @@ footer {
 .con-3 span {
   font: var(--tp-7r);
   letter-spacing: var(--tp-7r-ls);
-  color: white;
+  color: var(--clr-gray-600);
   text-align: center;
 }
 .con-1,
