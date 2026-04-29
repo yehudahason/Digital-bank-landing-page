@@ -100,7 +100,7 @@ a:hover {
   border-radius: 2rem;
   font: var(--tp-7b);
   letter-spacing: var(--tp-7b-ls);
-  background-color: var(--clr-green-400);
+  background-image: var(--grad-1);
   color: var(--clr-white);
   width: fit-content;
   cursor: pointer;
