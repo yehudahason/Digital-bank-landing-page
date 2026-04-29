@@ -388,9 +388,6 @@ footer {
   text-decoration: none;
   font-weight: 600;
   color: rgb(210, 93, 50);
-  transition:
-    color 0.2s ease,
-    opacity 0.2s ease;
 }
 
 .attribution a:hover {
