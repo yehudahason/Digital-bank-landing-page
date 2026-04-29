@@ -429,7 +429,7 @@ footer {
     left: 50%;
     transform: translateX(-50%);
     flex-direction: column;
-    width: 50%;
+    width: 80%;
     height: fit-content;
     background-color: white;
     z-index: 1000;
