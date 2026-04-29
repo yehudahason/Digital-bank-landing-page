@@ -96,6 +96,8 @@ a {
   letter-spacing: var(--tp-7b-ls);
   background-color: var(--clr-green-400);
   color: var(--clr-white);
+  width: fit-content;
+  cursor: pointer;
 }
 h1 {
   font: var(--tp-1);
@@ -222,7 +224,7 @@ h3 {
 }
 .container2 {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 2rem;
 }
@@ -278,18 +280,72 @@ h4 {
   padding: 16px 20px 19px;
 }
 footer {
+  padding: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 2rem;
+  width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 2rem;
+  background-color: var(--clr-blue-950);
+}
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+}
+.links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  color: white;
+}
+.links li a {
+  text-decoration: none;
+  color: white;
+  font: var(--tp-7r);
+  letter-spacing: var(--tp-7r-ls);
+}
+.con-3 span {
+  font: var(--tp-7r);
+  letter-spacing: var(--tp-7r-ls);
+  color: white;
+  text-align: center;
+}
+.con-1,
+.con-2,
+.con-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.con-1 {
+  gap: 3.5rem;
+}
+.con-3 {
+  gap: 1.5rem;
+}
+.con-2 {
+  margin-left: -10rem;
+}
+.socials {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
 }
 .attribution {
-  font: var(--text-preset-7-reg);
-  letter-spacing: var(--text-preset-7-reg-ls);
+  font: var(--tp-7r);
+  letter-spacing: var(--tp-7r-ls);
   bottom: 1px;
   font-size: 0.9rem;
   text-align: center;
@@ -357,6 +413,9 @@ footer {
     justify-content: flex-end;
     height: fit-content;
   }
+  .container2 {
+    justify-content: center;
+  }
   header {
     padding-left: 8%;
   }
@@ -399,6 +458,9 @@ footer {
   p {
     text-align: center;
   }
+  .con-2 {
+    margin-left: 0;
+  }
 }
 @media screen and (max-width: 768px) {
   .ul-container {
@@ -427,6 +489,16 @@ footer {
   }
   .text-con1 {
     padding-top: 0;
+  }
+  .footer-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .con-1 {
+    gap: 2rem;
+  }
+  .links {
+    grid-template-columns: 1fr;
   }
 }
 
