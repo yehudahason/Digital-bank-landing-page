@@ -79,7 +79,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1440px;
+  max-width: 90rem;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -312,7 +312,7 @@ footer {
   flex-direction: column;
   gap: 2rem;
   width: 100%;
-  max-width: 1440px;
+  max-width: 90rem;
   margin: 0 auto;
   background-color: var(--clr-blue-950);
 }
@@ -321,7 +321,7 @@ footer {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  max-width: 1440px;
+  max-width: 90rem;
 }
 .links {
   list-style: none;
@@ -370,6 +370,7 @@ footer {
   gap: 1rem;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .attribution {
   font: var(--tp-7r);
@@ -399,7 +400,7 @@ footer {
   margin: 0 0.5rem;
   opacity: 0.6;
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 81rem) {
   .img-con {
     width: 44rem;
   }
@@ -409,7 +410,7 @@ footer {
     align-items: center;
   }
 }
-@media screen and (max-width: 1212px) {
+@media screen and (max-width: 75rem) {
   body.active::before {
     content: "";
     position: fixed;
@@ -540,7 +541,7 @@ footer {
     margin-left: 0;
   }
 }
-@media screen and (max-width: 766px) {
+@media screen and (max-width: 47.5rem) {
   img.bottom {
     top: 0;
     content: url("./img/bg-intro-mobile.svg");
@@ -571,7 +572,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 546px) {
+@media screen and (max-width: 34rem) {
   header {
     padding: 2rem 1rem;
   }
@@ -599,12 +600,8 @@ footer {
   }
 }
 
-@media (max-width: 410px) {
-  .text-con1 {
-    /* margin-top: -6rem; */
-  }
+@media (max-width: 26.5rem) {
   img.top {
     width: 97%;
-    /* object-fit: cover; */
   }
 }
