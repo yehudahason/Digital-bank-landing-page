@@ -162,6 +162,13 @@ nav {
 }
 .ul-container li:hover {
   border-bottom: 4px solid var(--clr-green-400);
+  cursor: pointer;
+}
+.ul-container li a {
+  color: var(--clr-gray-600);
+}
+.ul-container li:hover a {
+  color: var(--clr-blue-950);
 }
 
 .section1 {
