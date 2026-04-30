@@ -510,6 +510,7 @@ footer {
     display: inline-block;
     height: 1.6rem;
     width: 1.6rem;
+    cursor: pointer;
   }
   .ul-container li {
     display: none;
