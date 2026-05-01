@@ -590,7 +590,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 34rem) {
+@media screen and (max-width: 31rem) {
   header {
     padding: 2rem 1rem;
   }
@@ -600,7 +600,7 @@ footer {
   }
   img.top {
     top: -30%;
-    width: 90%;
+    width: 88%;
     height: 26rem;
   }
   img.bottom {
@@ -620,6 +620,6 @@ footer {
 
 @media (max-width: 26.5rem) {
   img.top {
-    width: 97%;
+    width: 94%;
   }
 }
