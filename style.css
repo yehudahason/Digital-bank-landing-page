@@ -433,11 +433,15 @@ footer {
     height: 100%;
     background-image: var(--grad-2);
   }
+  .ul-container {
+    transform: translateX(100%);
+  }
   .ul-container.active {
     position: absolute;
     padding: 0rem 1rem 1rem;
     top: 7rem;
     left: 50%;
+
     transform: translateX(-50%);
     flex-direction: column;
     width: 80%;
@@ -451,7 +455,7 @@ footer {
     flex-wrap: nowrap;
     border-radius: 5px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-    transition: background-color 0.3s linear;
+    transition: transform 0.3s linear;
   }
 
   .ul-container.active li {
