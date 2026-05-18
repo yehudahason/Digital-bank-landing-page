@@ -438,7 +438,7 @@ footer {
     padding: 0rem 1rem 1rem;
     top: 7rem;
     display: flex;
-
+    left: 10%;
     flex-direction: column;
     width: 80%;
     height: fit-content;
@@ -451,11 +451,12 @@ footer {
     border-radius: 5px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s linear;
-    transform: translateX(120%);
+    visibility: hidden;
+    transform: translateY(-10px);
   }
   .ul-container.active {
-    left: 10%;
-    transform: translateX(0);
+    transform: translateY(0);
+    visibility: visible;
   }
 
   .ul-container li {
