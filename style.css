@@ -434,21 +434,16 @@ footer {
     background-image: var(--grad-2);
   }
   .ul-container {
-    transform: translateX(100%);
-  }
-  .ul-container.active {
     position: absolute;
     padding: 0rem 1rem 1rem;
     top: 7rem;
-    left: 50%;
+    display: flex;
 
-    transform: translateX(-50%);
     flex-direction: column;
     width: 80%;
     height: fit-content;
     background-color: white;
     z-index: 1000;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1rem;
@@ -456,13 +451,28 @@ footer {
     border-radius: 5px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s linear;
+    transform: translateX(120%);
+  }
+  .ul-container.active {
+    left: 10%;
+    transform: translateX(0);
   }
 
-  .ul-container.active li {
-    display: inline-block;
+  .ul-container li {
+    display: block;
+    width: 100%;
+    text-align: center;
+    height: auto;
     border: none;
-    padding: 4px;
-    height: 3rem;
+    padding: 0;
+  }
+  .ul-container li a {
+    color: var(--clr-blue-950);
+    padding: 1rem;
+    display: block;
+    width: 100%;
+    font: var(--tp-5);
+    transition: color 0.2s ease; /* Adds a clean hover transition */
   }
   .ul-container.active li a {
     color: var(--clr-blue-950);
@@ -516,9 +526,7 @@ footer {
     width: 1.6rem;
     cursor: pointer;
   }
-  .ul-container li {
-    display: none;
-  }
+
   header {
     padding: 1.5rem 4rem;
   }
