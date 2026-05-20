@@ -170,6 +170,7 @@ nav {
   border-bottom: 4px solid var(--clr-green-400);
   cursor: pointer;
 }
+
 .ul-container li a {
   color: var(--clr-gray-600);
 }
@@ -459,7 +460,7 @@ footer {
     visibility: visible;
   }
 
-  .ul-container li {
+  nav .ul-container li {
     display: block;
     width: 100%;
     text-align: center;
@@ -467,6 +468,10 @@ footer {
     border: none;
     padding: 0;
   }
+  .ul-container li:hover {
+    border: none;
+  }
+
   .ul-container li a {
     color: var(--clr-blue-950);
     padding: 1rem;
@@ -475,12 +480,13 @@ footer {
     font: var(--tp-5);
     transition: color 0.2s ease; /* Adds a clean hover transition */
   }
+
   .ul-container.active li a {
     color: var(--clr-blue-950);
     padding: 1rem;
   }
-  .ul-container.active a:hover {
-    color: rgb(157, 5, 5);
+  .ul-container li a:hover {
+    color: var(--clr-green-400);
   }
   .hamburger.active {
     content: url("./img/icon-close.svg");
