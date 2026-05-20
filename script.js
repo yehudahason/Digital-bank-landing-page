@@ -6,6 +6,9 @@ menuBtn.addEventListener("click", () => {
   menuEl.classList.toggle("active");
   menuBtn.classList.toggle("active");
   body.classList.toggle("active");
+  if (menuEl.classList.contains("active")) {
+    menuEl.focus();
+  }
 });
 
 window.addEventListener("click", (e) => {
